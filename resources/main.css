@@ -31,6 +31,8 @@ section{
     height:100%;
     background-image:url(../assets/bg-header.jpg);
     background-size:cover;
+    display:flex;
+    flex-direction:row;
 }
 
 .container{
@@ -38,7 +40,26 @@ section{
     height:70%;
     background-color:#2b2b2b;
     margin-right:0;
+    padding:30px;
 }
+
+.wrapper{
+    width:100px;
+    height:50px;
+    border-left:3px solid gray;
+    margin: 10px 0px;
+}
+
+.instagram-icon{
+    width:30px;
+    height:30px;
+}
+
+.instagram-icon i{
+    width:30px;
+    height:30px;
+}
+
 
 .container div:first-child{
     font-size:50px;
@@ -46,8 +67,18 @@ section{
 }
 
 .navigation-bar{
-    float:right;
+   width:60%;
+   height:40%;
+   display: flex;
+   justify-content:flex-end;
+   justify-content: space-around;
+   margin-left:150px;
+   color:white;
+   font-family:sans-serif;
+   font-size:25px;
+   margin-top:50px;
 }
+
 .new-york-wrapper{
     background-image:url(../assets/concert-hall.jpg);
     width:33%;
