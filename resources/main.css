@@ -16,12 +16,12 @@ html , body{
 
 header{
     width:100%;
-    height:70%;
+    height:50%;
 }
 
 section{
     width:100%;
-    height:100%;
+    height:70%;
     display:flex;
     flex-direction:row;
 }
@@ -50,22 +50,40 @@ section{
     margin: 10px 0px;
 }
 
-.instagram-icon{
-    width:30px;
-    height:30px;
-}
-
 .instagram-icon i{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
+    color:gray;
 }
 
+.facebook-icon i{
+    width:20px; /*nu stiu ce am gresit aici de nu mi mareste iconita */
+    height:20px;
+    color:gray;
+}
+
+.title{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+    font-size:70px;
+    padding-right:100px;
+    font-family:sans-serif;
+}
 
 .container div:first-child{
     font-size:50px;
     color:white;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.container-header{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
 .navigation-bar{
    width:60%;
    height:40%;
@@ -225,6 +243,222 @@ section{
 
 footer{
     width:100%;
-    height:100%;
+    height:80%;
     background-color:#2b2b2b;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+
+.first-button{
+    width:150px;
+    height:50px;
+    border-radius:25px;
+    margin-top:50px;
+    background-color:#3d3d3d;
+    color:white;
+}
+
+.footer-title{
+    display: flex;
+    font-size:50px;
+    margin:50px;
+    font-family:sans-serif;
+}
+
+.footer-title div:first-child{
+    color:white;
+}
+
+.footer-title div:last-child{
+    margin-left:20px;
+    color:#c09c78;
+}
+
+input{
+    width:300px;
+    height:50px;
+    margin-top:30px;
+    margin-right:30px;
+    background-color:#3d3d3d;
+}
+
+::placeholder{
+    color:white;
+}
+.wrapper-first-input{
+    display:flex;
+    flex-direction:column;
+}
+
+.wrapper-second-input{
+    display:flex;
+    flex-direction:column;
+}
+
+form{
+    display:flex;
+}
+
+textarea{
+    width:300px;
+    height:130px;
+    margin-top:30px;
+    background-color:#3d3d3d;
+}
+
+.second-button{
+    width:150px;
+    height:50px;
+    border-radius:25px;
+    background-color:#c09c78;
+    color:white;
+    margin-top:50px;
+}
+.mobile-button{
+    display:flex;
+    justify-content: center;
+}
+
+
+@media(max-width:600px){
+
+    .page-wrapper , html , body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+    }
+
+    header{
+        width:100%;
+    }
+
+    .wrapper{
+        height:30px;
+    }
+
+    .container div:first-child{
+        font-size:20px;
+    }
+
+    .navigation-bar-mobile{
+        width:100%;
+        height:10%;
+        color:white;
+        display:flex;
+        justify-content:flex-end;
+        padding:30px 30px 0px 0px;
+        position:absolute;
+        right:10px;
+    }
+
+    /* .navigation-bar-mobile i{
+        width:300px;
+        height:300px;
+    } */
+
+    .navigation-bar{
+        display:none;
+    }
+
+    .title{
+        position:relative;
+        top: 200px;
+        right:50px;
+    }
+
+    .container{
+        height:50%;
+    }
+
+    section {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        height:100%;
+    }
+
+    .new-york-wrapper,
+    .gorizia-wrapper,
+    .london-wrapper,
+    .paris-wrapper,
+    .chicago-wrapper,
+    .bucharest-wrapper{
+        width:100%;
+        height:70%; 
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+    }
+
+    .paris-wrapper div{
+        color:red;
+    }
+
+    .new-york-wrapper p{
+        transform:rotate(90deg);
+    }
+
+    .gorizia-wrapper div:last-child,
+    .new-york-wrapper div:last-child,
+    .london-wrapper div:last-child,
+    .bucharest-wrapper div:last-child,
+    .paris-wrapper div:last-child,
+    .chicago-wrapper div:last-child{
+        transform:rotate(0deg);
+        
+    }
+
+    .new-york-wrapper div:nth-child(2),
+    .london-wrapper div:nth-child(2),
+    .gorizia-wrapper div:nth-child(2),
+    .bucharest-wrapper div:nth-child(2),
+    .chicago-wrapper div:nth-child(2),
+    .paris-wrapper div:nth-child(2){
+        color:#c09c78 ;
+        padding-left:5px;
+        display: inline;
+    }
+
+    footer{
+        width:100%;
+        height:100%;
+    }
+
+    .footer-title{
+        margin:10px;
+        font-size:40px;
+    }
+
+    .first-button{
+        display:none;
+    }
+
+    form{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .wrapper-mobile{
+        width:80%;
+        margin:0 auto;
+        height:80%;
+    }
+
+    input , textarea{
+        width:100%;
+    }
+
+    .mobile-button{
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    .second-button{
+        height:35px;
+        margin-top:30px;
+    }
 }
