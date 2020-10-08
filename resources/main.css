@@ -394,10 +394,6 @@ textarea{
         flex-direction: column;
     }
 
-    .paris-wrapper div{
-        color:red;
-    }
-
     .new-york-wrapper p{
         transform:rotate(90deg);
     }
